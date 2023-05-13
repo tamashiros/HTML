@@ -1,20 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Keiichi Tamashiro">
-    <meta name="description " content="Atidade para estudo de tags e">
-    <meta name="keywords" content="html, semantica, bold, italico, foot,">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <title>Atividade HTML semantica</title>
-    <title>Document</title>
+    <meta name="description" content="Atividade para estudo de tags e elemtnos de semântica HTML">
+    <meta name="keywords" content="html, tag, mark, semantica, bold, italico, footer">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Atividade Tags HTML semântica</title>
 </head>
+
 <body>
-    <h1> Atividade HTML Semantica </h1>
-    <h2>Uso de negrito </h2>
-    <p> usando a teg <b>B, mas ela não terá o valor semantico </b></p>
-    <h1>teste</h1>
+    <h1> Atividade HTML semântica</h1>
+    <h2> Uso de negrito</h2>
+    <p> Posso fazer o negrito usando a tag <b>B</b>, mas ela não tem semântica</p>
+    <p> É melhor eu usar a tag <strong>STRONG</strong>, pois ela é semântica</p>
+
+    <h2>Uso de Itálico/ênfase</h2>
+    <p> posso usar a tag i para fazer um <i>ITÁLICO</i>, mas não terá valor semântico</p>
+    <p> É melhor eu usar a tag <em>EM</em> pois ela é semântica e passa o significado de ênfase naquele trecho de texto</p>
+
+    <h2> Texto marcado   </h2>
+    <p> é possível fazer um texto marcado com a tag <mark>MARK</mark></p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+
+    <h1>Texto deletado</h1>
+    <p> Podemos usar a tag DEL para indicar um <del>texto que foi excluído </del> </p>
+
+    <h1>Texto inserido</h1>
+    <p>Podemos <ins> marcar um texto como inserido  </ins> para dar ênfase e indicar que ele foi adicionado depois usando a tag INS</p>
+    <p>POdemos também <u> usar a tag U </u> para sublinhar, porém ela é não-semântico</p>
+
+    <h1>Texto sobrescrito</h1><h1></h1>
+    <p> Utilizar SUP para coisas do tipo  x<sup>20</sup> </p>
+    </p>    
+    
+    <h1>Texto subscrito</h1>
+    <p> Utilizar SUB para coisas do tipo  H<sub>2</sub>O </p>
+    
+    <h1>Texto pré-formatado</h1>
+    <p>Usar a tag PRE</p>
+     <pre>
+                                longe
+                    médio              
+        perto
+encostado        
+
+     </pre>   
+
+</p>
+
+<h1> Código-fonte com CODE</h1>
+<p> O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>        
+
+<h1> Código-fonte com CODE + PRE</h1>
+ <pre> <code>
+            num=int(input("Digite um numero"))
+            if num %2 == 0;
+                prinf(f 'O numero {num} é PAR')
+            else:
+                printf(f 'o numero {num] é impar")}')
+            print("Fim do programa")   
+           
+ &lt;html&gt;
+     &lt;body&gt;
+        &lt;p&gt; TESTE &lt;p&gt;
+     &lt;/body&gt;
+&lt;/html&gt;       
+
+ </code></pre>
+ 
+ <h1>Citações</h1>
+ <p>Posso usar CITE para citações de obras, autores ou termos técnicos, exemplo </p>
+ <p> O advento do estilo em cascata <cite>Cascading Style Sheet - CSS</cite> possibilitou inúmeras possibilidades quanto à apresentação de um conteúdo em uma página HTML</p>
+
+ <p> Também posso usar Q para citaçõesc omuns:
+ <p> Como diria o pai de um amigo, <q> O computador é um burro muito rápido</q></p> 
+ 
+    <p> Para citações maiores, devo usar o BLOCKQUOTE. Também posso combinar com o CITE</p>
+    <p>Trecho do livro <cite>O Tempo e o Vento, de Erico Verissimo</cite>:</p>
+    <p><blockquote cite="https://www.amazon.com.br/tempo-vento-parte-1">
+        "Era uma noite fria de lua cheia. As estrelas cintilavam sobre a cidade de Santa Fé, que de tão quieta e deserta parecia um cemitério abandonado. Era tanto o silêncio e tão leve o ar, que se alguém aguçasse o ouvido talvez pudesse até escutar o sereno na solidão."
+        </blockquote></p>
+
+    <h1>Abreviações com ABBR</h1>
+    <p> Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou gostando</p>
+    </p>
+ </p>
+ 
+ <h1>Texto Invertido</h1>
+ <p>Voce pode escrever com texto invertido usando tag BDO com atributo DIR="RTL"</p>
+ <p><bdo dir="rtl">Este é uma exemplo</bdo>  </p>
+
+ <h1>Informações de contato</h1>
+ <p> Usar a tag ADDRESS</p>
+ <address>
+    Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+    Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.<br>
+    Você tambem pode querer nos visitar:<br>
+    Mozilla Foundation<br>
+    1981 Landings Drive<br>
+    Building K<br>
+    Mountain View, CA 94043-0801<br>
+    USA
+ </address>
+
+ <h1>Cabeçalho</h1>
+ <p>Para indicar que aquele conteúdo é um cabeçaho, utilize a tag HEADER</p>
+ <header> Eu sou um elemento que faz parte do cabeçalho da página</header>
+<p> também posso fazer um agrupamento de cabeçalhos com a tag HGROUP</p>
+        <hgroup class"cabecalhos-noticias">
+               <h1>Sou o título principal</h1>
+               <h2>Eu Sou um subtítulo</h2>
+        </hgroup>
+
+<h1>Rodapé</h1>
+    <p>Para indicar que aquele conteúdo é um rodapé, utilize a tag FOOTER</p>
+</h1>
+<footer> Eu sou um elemento que faz parte do rodapé da página</footer>
+
+<h1>Diferença entre SECTION e ARTICLE</h1>
+<p>
+    <em>"Qual a diferença?"</em>, você pode estar se perguntando. Ambos os elementos são usados para seccionar o conteúdo – e, sim, eles definitivamente podem ser intercambiáveis. É uma questão de analisar cada situação. O HTML4 nos oferecia somente um tipo de elemento container, a DIV. Embora ela ainda seja usada em HTML5, ainda temos a possibilidade de substituí-la em duas maneiras, usando SECTION e ARTICLE.
+<pre>
+        Os elementos SECTION e ARTICLE são conceitualmente similares e intercambiáveis. Para decidir qual deles você deve escolher, observe o que citaremos abaixo:
+        
+
+        1- Um ARTICLE tem como objetivo ser independentemente distribuível ou reutilizável.
+        
+        2-Uma SECTION é um  agrupamento temático de conteúdos.
+</pre>
+</p>
+
+<h1>FIGURE e FIGCAPTION</h1>
+<p> FIGURE serve para inserir conteúdos de imagem, enquanto FIGCAPTION é destinado às legendas dessa imagem.</p>
+
+<h1>Time</h1>
+O elemento TIME permite que uma data no formato ISO 8601 não ambígua seja adicionada a uma versão mais amigável para leitura humana daquela data.
+<pre><code lang="html" >
+    &lt;time datetime="2017-10-31T11:21:00+02:00"&gt;Terça, 31 Outubro 2017&lt;/time&gt;
+    </code></pre>
+    Por que se preocupar com &lt;time&gt;? Embora humanos possam eliminar ambiguidades e ler o tempo de maneiras normais, os computadores podem ler datas em formato ISO 8601 e ver a data, a hora e o fuso horário.
 </body>
 </html>
